@@ -1,0 +1,25 @@
+---
+version: '2'
+
+services:
+  adapter:
+    image: node:15-slim
+    volumes:
+      - ./src:/app
+    ports:
+      - 2015:2015
+    environment:
+#      - PROXY_URL=http://127.0.0.1:3128
+      - PORT=2015
+    working_dir: /app
+    entrypoint: npm
+    command: start
+
+  caddy:
+    image: caddy
+    environment:
+      - ACME_AGREE=true
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    ports:
+      - 8080:8080

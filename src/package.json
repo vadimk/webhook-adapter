@@ -1,0 +1,17 @@
+{
+  "name": "webhook-adapter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "https-proxy-agent": "^5.0.0",
+    "node-fetch": "^2.6.1"
+  }
+}
