@@ -33,7 +33,7 @@ In Secure Network Analytics Manager, go to Configure -> Response Management. In 
 ```
 https://<hostname>:8080/webex-teams/<key>
 ```
-as a Webhook URL.
+as a Webhook URL. Where <key> is the Webex Teams integrations key.
 It must be HTTPS. 
 
 ### Proxy
