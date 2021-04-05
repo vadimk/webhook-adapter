@@ -5,8 +5,6 @@ const EVENT_SAMPLE = require("./sample")
 const app = express()
 const { PORT } = process.env || 2015
 
-app.set('port', PORT)
-
 app.use(express.json()) // for parsing application/json
 
 app.get("/", (req, res) => res.send("Hello World!"))
